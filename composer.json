@@ -1,0 +1,19 @@
+{
+    "name": "simplecart",
+    "type": "bolt-extension",
+    "description": "A SimpleCart extension for Bolt with stock management",
+    "autoload": {
+      "psr-4": {
+        "SimpleCart\\": "src/"
+      }
+    },
+    "require": {
+      "bolt/bolt": "^5.0"
+    },
+    "extra": {
+      "bolt": {
+        "config": "config/"
+      }
+    }
+  }
+  

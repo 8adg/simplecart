@@ -1,0 +1,6 @@
+# config/routes.yml
+
+add_to_cart:
+    path: /add-to-cart/{productId}/{quantity}
+    defaults: { _controller: SimpleCart\Controller\SimpleCartController::addToCartAction }
+    methods: [GET, POST]

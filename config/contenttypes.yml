@@ -1,0 +1,19 @@
+# config/contenttypes.yml
+
+simplecart:
+    name: SimpleCart
+    singular_name: SimpleCart
+    fields:
+        title:
+            type: text
+            label: "Title"
+        price:
+            type: number
+            label: "Price"
+        description:
+            type: textarea
+            label: "Description"
+        stock:
+            type: number
+            label: "Stock"
+            default: 0

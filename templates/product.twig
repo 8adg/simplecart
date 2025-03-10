@@ -1,0 +1,12 @@
+{# templates/product.twig #}
+
+<h3>{{ simplecart.title }}</h3>
+<p>{{ simplecart.description }}</p>
+<p><strong>Precio:</strong> ${{ simplecart.price }}</p>
+<p><strong>Stock disponible:</strong> {{ simplecart.stock }}</p>
+
+{% if simplecart.stock > 0 %}
+    <button class="add-to-cart" data-product-id="{{ simplecart.id }}" data-stock="{{ simplecart.stock }}">Añadir al carrito</button>
+{% else %}
+    <p>Agotado</p>
+{% endif %}
